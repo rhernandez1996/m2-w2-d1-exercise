@@ -9,7 +9,9 @@ div {
   height: 500px;
   background-image: url('images/water-lily.jpg');
   background-repeat: no-repeat;
-  
+  background-position: top center;
+  background-attachment: fixed; /* image will not move when scroll*/ 
+  background-size: contain;
   background-color:rgb(203, 247, 220);
 }
 
@@ -19,7 +21,7 @@ div {
 
 <p>Resize the browser window to see the effect.</p>
 
-<div></div>
+<div class="container"></div>
 
 </body>
 </html>
