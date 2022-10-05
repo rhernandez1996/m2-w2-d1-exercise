@@ -22,7 +22,21 @@ body {
   display: grid;
   grid-gap: 1rem;
 }
+/* Media Queries */
 
+/* is the screen larger than 600 pixels? make it two columns */
+@media (min-width: 600px) {  /*all default styles are mobile so its 600 and below/ mobile first design approach*/
+  .cards {
+    grid-template-columns: repeat(2, lfr); /* creates columns / equal apart then 1fraction*/
+  }
+}
+
+/* screen larger than 992 pixels? make it three columns*/
+@media (min-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 </style>
 </head>
 <body>
